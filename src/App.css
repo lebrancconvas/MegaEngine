@@ -1,5 +1,13 @@
-.App {
-  text-align: center;
+@keyframes bganimate {
+  0% {
+    background-color: #282c34;
+  }
+  50% {
+    background-color: #000000;
+  }
+  100% {
+    background-color: #282c34;
+  }
 }
 
 .App-logo {
@@ -8,7 +16,9 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  animation-name: bganimate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
